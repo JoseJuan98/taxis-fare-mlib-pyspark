@@ -15,3 +15,6 @@ Another improvement would be to work with Remote Clustering in a network with se
 This repository contains the code of the Jupyter Notebook that we worked with and the Latex's Report about the Technology Study Project that we did.
 
 
+Collaborators:
+ - Enrique Vilchez Campillejo | Github:@envilk
+ - Jose Juan Peña Gomez
