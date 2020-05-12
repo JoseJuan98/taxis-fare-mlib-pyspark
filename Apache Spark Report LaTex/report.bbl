@@ -1,0 +1,45 @@
+\begin{thebibliography}{1}
+
+\bibitem{brown:eadline2015hadoop}
+Douglas Eadline.
+\newblock {\em Hadoop 2 Quick-Start Guide: Learn the Essentials of Big Data
+  Computing in the Apache Hadoop 2 Ecosystem}.
+\newblock Addison-Wesley Professional, 2015.
+
+\bibitem{sparkWebsite}
+Apache~Software Foundation.
+\newblock Apache spark official site.
+
+\bibitem{pySpark}
+Apache~Spark Foundation.
+\newblock Pyspark.
+
+\bibitem{taxiDataset}
+Kaggle.
+\newblock New york city taxi fare prediction.
+
+\bibitem{Jupyter}
+IPythinon Project.
+\newblock Jupyter notebook.
+
+\bibitem{wang2014characterization}
+Yandong Wang, Robin Goldstone, Weikuan Yu, and Teng Wang.
+\newblock Characterization and optimization of memory-resident mapreduce on hpc
+  systems.
+\newblock In {\em 2014 IEEE 28th International Parallel and Distributed
+  Processing Symposium}, pages 799--808. IEEE, 2014.
+
+\bibitem{zaharia2012resilient}
+Matei Zaharia, Mosharaf Chowdhury, Tathagata Das, Ankur Dave, Justin Ma, Murphy
+  McCauley, Michael~J Franklin, Scott Shenker, and Ion Stoica.
+\newblock Resilient distributed datasets: A fault-tolerant abstraction for
+  in-memory cluster computing.
+\newblock In {\em Proceedings of the 9th USENIX conference on Networked Systems
+  Design and Implementation}, pages 2--2. USENIX Association, 2012.
+
+\bibitem{brown:zaharia2010spark}
+Matei Zaharia, Mosharaf Chowdhury, Michael~J Franklin, Scott Shenker, and Ion
+  Stoica.
+\newblock Spark: Cluster computing with working sets.
+
+\end{thebibliography}

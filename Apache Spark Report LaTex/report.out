@@ -1,0 +1,14 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{The Software Technology}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Spark Architecture}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{MLlib}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.3}{Clustering}{section.2}% 5
+\BOOKMARK [1][-]{section.3}{Demonstrator Prototype}{}% 6
+\BOOKMARK [2][-]{subsection.3.1}{High-Level View}{section.3}% 7
+\BOOKMARK [2][-]{subsection.3.2}{Implementation}{section.3}% 8
+\BOOKMARK [1][-]{section.4}{Test-bed Environment and Experimental Results}{}% 9
+\BOOKMARK [2][-]{subsection.4.1}{Jupyter Notebooks Jupyter}{section.4}% 10
+\BOOKMARK [2][-]{subsection.4.2}{PySpark pySpark}{section.4}% 11
+\BOOKMARK [2][-]{subsection.4.3}{About the dataset Taxi Problem taxiDataset}{section.4}% 12
+\BOOKMARK [2][-]{subsection.4.4}{Experiments }{section.4}% 13
+\BOOKMARK [1][-]{section.5}{Conclusion}{}% 14

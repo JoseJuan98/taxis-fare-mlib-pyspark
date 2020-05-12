@@ -1,0 +1,63 @@
+\section{Test-bed Environment and Experimental Results}
+\label{sec:experiments}
+
+\subsection{Jupyter Notebooks \cite{Jupyter}}
+
+The software used to experiment with the data was Jupyter Notebook (to write python code) and PySpark (to run that python code into Spark).
+Jupyter Notebook (formerly IPython Notebook) is an open-source web application that lets you create and share documents containing live code, equations, visualizations, and narrative text.\\*
+
+Also, it is a widely used application in the field of Data Science to create and share documents including data cleansing and transformation, numerical simulation, statistical modeling, data visualization, automatic learning and much more.\\*
+It allows you to edit and run notebook documents through any web browser of your choice, and it can run on a local desktop that does not require Internet access, or it can be installed on a remote server and accessed through the Internet. We can also run Jupyter Notebook without any installation.
+
+\subsection{PySpark \cite{pySpark}}
+PySpark is a python API for spark released by the Apache Spark community to support Python with Spark. Using PySpark, one can easily integrate and work with RDD in Python programming language as well. 
+
+Numerous features make PySpark an magnificent framework when it comes to working with huge datasets. Whether it is to perform computations on large data sets or to just analyze them, Data engineers are turning to this tool. What follows, are some of the mentioned features.\\*
+
+\noindent
+The following features are the key features of PySpark:
+
+\begin{description}
+	\item [Real-time computations]: Because of the in-memory processing in PySpark framework, it shows low latency.
+	\item [Polyglot]: PySpark framework is compatible with various languages like Scala, Java, Python, and R, which makes it one of the most preferable frameworks for processing huge datasets.
+	\item [Caching and disk persistence]: PySpark framework provides powerful caching and very good disk persistence.
+	\item [Fast processing]: PySpark framework is a lot faster than other traditional frameworks for big data processing.
+	\item [Works well with RDD]: Python programming language is dynamically typed which is helpful when working with RDD.
+\end{description}
+
+\noindent
+\subsection{About the dataset Taxi Problem \cite{taxiDataset}} 
+
+The goal of this dataset is predicting the fare amount (inclusive of tolls) for a taxi ride in New York City given the pickup and dropoff locations. While you can get a basic estimate based on just the distance between the two points, this will result in an RMSE of $5-$8, depending on the model used. Our challenge is to achieve it by using distributed Machine Learning techniques.\\*
+
+This dataset was chosen due to containing 6 Gb of data, which is an appropriate amount of data to test our results.
+
+\subsection{Experiments }
+
+There have been six experiments done (Each of them is a model testing), to try Linear regression, Decision tree regression and Random forest regression in Native Clustering and the rest to try Linear regression, Decision tree regression and Random forest regression in Local Cluster mode.\\*
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{llrrrrrr}
+		Mode & Machine Learning Model & Time-1 & RMSE-1 & Time-2 & RMSE-2 & Time-3 & RMSE-3
+		\\ \hline \hline
+		Native Cluster  & Linear Regression   &    4:04 min  &   20.7  &  11:47 min & 20.7 & 8:17 min & 20.7 \\   
+		Native Cluster  & Decision Tree   &    8:37 min  &   23.96  &  20:22 min  &  23.96  & 20:05 min &  23.96\\   
+		Native Cluster  & Random Forest   &   11:50 min &   23.96  &  35:37 min  & 24.82  & 35:53 min & 24.82 \\  \hline
+		Local Cluster   & Linear Regression   &   2:33 min &   20.7  &  7:40 min  & 20.7 & 7:36 min  & 20.7   \\ 
+		Local Cluster   & Decision Tree   &   5:30 min &   16.49  & 11:35 min & 24.03 & 13:05 min & 24.03  \\   
+		Local Cluster   & Random Forest   &   8:44 min &   23.96  & 18:30 min & 23.96 & \textbf{26:28 min} & \textbf{6.86}  \\
+		\hline \hline
+	\end{tabular}
+	\caption{Selected experimental results on the training models.}
+	\label{tab:results}
+\end{table}
+
+There have been two approaches tested. One with Local Clustering, which the machine invests less time computing machine learning models than with Native Clustering. Both were trained using the same models respectively to make well-done comparasions.
+
+Clearly, Linear Regression is the fastest model, and Random Forest is highly computing consuming. That's why it is more time spending model, but that's also why is the most accurate one.\\*
+
+Besides, it might be more beneficial to use Clustering with several machines, but it wasn't possible to experiment with that in this case. We didn't achieve to connect our computers to make a Remote Cluster with them by SSH because this protocol requires a lot of set-ups that we could have done properly. The interesting part is that if one machine fails, another can pick up the workload. In this way the system wouldn’t never have an issue when the machines are processing data and suddenly a failure occurs. In addition, the work is could be more parallelized than with Local Clustering.\\*
+
+RMSE is the Root Mean Square Error of the machine learning models, it's a variable to measure the error that could produce that model. It's necessary to remark that as lower is the RMSE better is the accuracy of the model .In most of the cases, the RMSE doesn't change as we explain before because we are using the same algorithms with the same dataset(excellent for make comparisons depending on the mode of clustering). Except for one case in the third experiment with Random Forest in Local clustering, which is an excellent result, but the differences with the previous ones make it a wrong choice to compare with the rest. The same happened too in the first sample in the local clustering of the Decision Tree Regression and there is no remarkable information that could help with the comparisons.\\*
+

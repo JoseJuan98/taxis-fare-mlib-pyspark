@@ -1,0 +1,79 @@
+\documentclass[11pt]{article}
+
+\usepackage{a4wide}
+\usepackage{mathptm}
+\usepackage{xspace}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{tikz}
+\usepackage{tkz-graph}
+\usetikzlibrary{shapes.misc, positioning}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{pdfpages}
+\usepackage{hyperref}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=Java,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=left,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+\begin{document}
+
+\title{Apache Spark Software Technology Evaluation Project}
+
+\author{Jose Juan Pena Gomez and Enrique Vilchez Campillejo,
+Group 11}
+
+\maketitle
+
+\begin{abstract}
+
+The software technology which will be discussed in this report is \textbf{Apache Spark}, an unified tool for analysing and processing data. In addition, \textbf{PySpark} is going to be used to write the code in \textbf{iPython Notebook}.
+
+The purpose of this report is to check the different ways of processing big data using \textbf{Distributed Machine Learning} techniques, working with clusters, to see which way of \textbf{clustering} is more efficient.
+
+The dataset taken for this project contains taxi travels with information about source location, target location, amount of passengers and taxi fare. This \textbf{large dataset} is a proficient approach to work with Spark in big data computing purposes.
+
+There will be three Distributed Machine Learning models presented, in two approaches, one way for \textbf{Native Clustering}, which means one core acting as a cluster and the other approach is \textbf{Local Clustering} which means as many clusters as cores the processor has.
+
+The models used are \textbf{Linear Regression}, \textbf{Decision Tree} and \textbf{Random Forest} generating several results. Basically, the results acknowledge the efficiency to work with Local Clustering rather than working with Native Clustering. 
+
+Another improvement would be to work with \textbf{Remote Clustering} in a network with several machines, but it wasn't possible to implement it in the end. Remote clustering is more efficient because of the quantity of cores used to parallelize the tasks.
+
+  
+\end{abstract}
+
+%\input{commands}
+
+\input{sections/introduction}
+
+\input{sections/background}
+
+\input{sections/prototype}
+
+\input{sections/experiments}
+
+\input{sections/conclusion}
+
+\bibliographystyle{plain}
+\bibliography{report.bib}{}
+
+\end{document}
