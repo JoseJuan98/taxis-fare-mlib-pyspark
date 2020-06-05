@@ -5,6 +5,7 @@ The software technology which will be discussed in this report is Apache Spark, 
 The purpose of this report is to check the different ways of processing big data using Distributed Machine Learning techniques, working with clusters, to see which way of clustering is more efficient.
 
 The dataset taken for this project contains taxi travels with information about source location, target location, amount of passengers and taxi fare. This large dataset is a proficient approach to work with Spark in big data computing purposes.
+                                https://www.kaggle.com/chicago/chicago-taxi-rides-2016
 
 There will be three Distributed Machine Learning models presented, in two approaches, one way for Native Clustering, which means one core acting as a cluster and the other approach is Local Clustering which means as many clusters as cores the processor has.
 
